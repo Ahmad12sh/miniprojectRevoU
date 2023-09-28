@@ -1,0 +1,182 @@
+        /* CSS untuk style navbar */
+        body {
+            background-color: gold;
+            margin: 0;
+            padding: 0;
+        }
+
+         /* CSS untuk style font semua */
+        body, .navbar, .navbar a, .center-text, .content-wrapper, .form-container, 
+        .form-container h2, .form-container p, .form-container label, .form-container input, 
+        .form-container select, .form-container button {
+        font-family: 'Times New Roman', Times, serif;
+        }
+
+        .navbar {
+            background-color: yellow;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-bottom: 2px solid black; /* Tambahkan garis bawah hitam di bawah navbar */
+        }
+
+        .navbar a {
+            font-size: 16px;
+            color: black;
+            text-decoration: none;
+            margin-left: 0;
+            position: relative;
+        }
+
+        .navbar a:not(.logo) {
+            padding: 10px 20px;
+            margin-right: -1px;
+        }
+
+        .navbar a:not(.logo):hover {
+            background-color: rgb(218, 143, 4);
+            color: black;
+        }
+
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .navbar .logo img {
+            width: 30px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        /* Tambahkan border di semua sisi (kiri, atas, kanan, bawah) pada menu */
+        .navbar a:not(.logo)::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 2px solid black;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        /* CSS untuk membuat menu responsive */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar .logo {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+
+            .navbar a {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* CSS untuk membuat grid container */
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Membagi konten menjadi dua kolom dengan lebar yang sama */
+            gap: 20px; /* Jarak antara kolom-kolom */
+            align-items: center; /* Menengahkan vertikal konten di dalam kolom */
+        }
+
+        /* CSS untuk mengatur image container */
+        .image-container {
+            text-align: end;
+            align-self: start;
+        }
+
+        /* CSS untuk mengatur ukuran gambar */
+        .image-container img {
+            border: 2px solid black;
+            padding-left: 50px;
+            padding-right: 50px;
+            max-width: 250px;
+        }
+
+        /* CSS untuk mengatur form container */
+        .form-container {
+            border: 2px solid black;
+            padding: 40px 20px;
+            align-self: start;
+            max-width: 300px;
+        }
+
+        /* CSS untuk menggeser teks "Contact Us" dan "Sales" ke atas */
+        .form-container h2 {
+        margin-top: -20px; /* Menghapus margin atas pada h2 */
+        }
+
+        .form-container p {
+        margin-top: 10px; /* Menggeser teks "Sales" ke atas */
+        }
+
+        /* CSS untuk mengatur margin-bottom pada elemen dalam form */
+        .form-container div {
+            margin-bottom: 10px;
+        }
+
+        /* CSS untuk mengatur tombol send */
+        .form-container button {
+        width: 100%;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: black; /* Warna latar belakang tombol */
+        color: white; /* Warna teks pada tombol */
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang */
+        }
+
+        /* Ketika tombol dihover, ubah warna latar belakangnya */
+        .form-container button:hover {
+        background-color:  rgb(218, 143, 4); /* Warna latar belakang yang berbeda saat dihover */
+        }
+
+        /* CSS untuk mengatur penomoran dengan border lingkaran kecil */
+        ol {
+        list-style-type: none; /* Menghilangkan penomoran bawaan */
+        counter-reset: my-counter; /* Mengatur ulang counter */
+        padding: 20px;
+        text-align: start;
+        }
+
+        ol li {
+        counter-increment: my-counter; /* Menginkrementasi counter */
+        font-size: 16px;
+        margin-bottom: 10px;
+        position: static;
+        padding-left: 5px;
+        display: flex; /* Menjadikan elemen <li> menjadi flex container */
+        align-items: center; /* Mengalign elemen di tengah vertikal */
+        }
+
+ol li::before {
+    content: counter(my-counter); /* Menampilkan nilai counter */
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black; /* Border lingkaran kecil */
+    border-radius: 50%; /* Membuat lingkaran */
+    text-align: center;
+    line-height: 20px;
+    margin-right: 10px;
+    background-color: yellow; /* Warna latar belakang lingkaran */
+    font-weight: bold;
+    position: static;
+    left: 20px;
+}

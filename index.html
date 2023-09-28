@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>RevoU</title>
+</head>
+<body>
+
+<div class="navbar">
+    <div class="logo">
+        <img src="logosayur.png" alt="Logo RevoU"> <!-- Gantilah 'logo.png' dengan path ke logo Anda -->
+        <span>Belanja</span>
+    </div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#ourpackage">Our Package</a>
+        <a href="#contact">Call Us</a>
+    </div>
+</div>
+
+<div style="padding: 20px;">
+    <h1 class="center-text">Top Rated E-Groceries Shop in Indonesian</h1>
+    <p class="center-text">Every Day with best Ingredients</p>
+    <!-- Isi konten halaman Anda dapat ditempatkan di sini -->
+    <div class="content-wrapper">
+      <div class="image-container">
+    <img src="sayur.jpg" alt="Image Description">
+    <i><p style="text-align: right; margin-top: 20px; margin-right: 50px; font-size: 14px;">*Setiap hari beli sayur buah yang fresh disini*</p></i>
+    <!-- Tambahkan ikon user-alt dan keterangan nama -->
+    <div style="display: flex; flex-direction: column; align-items: flex-end; margin-right: 150px;">
+        <div style="display: flex; align-items: center;">
+            <i class="fas fa-user-alt" style="font-size: 20px; margin-right: 10px; border: 1px solid black; border-radius: 50%; padding: 4px;"></i>
+            <p style="font-size: 18px; font-weight: bold;">Florence Hughes</p>
+        </div>
+        <i><p style="font-size: 18px; margin-top: 0px;">Ibu Rumah Tangga, 28</p></i> <!-- Taruh di bawah dan tambahkan margin-top -->
+    </div>
+    <!-- Tulisan di bawah ikon "user-alt" -->
+    <p style="font-size: 18px; margin-top: 10px; text-align: justify; margin-left: 10px;">
+        Use this space to provide users with more information about your offer. Consider it follow-up to your headline and explain the benefits of your service or product.
+    </p>    
+
+    <!-- Tulisan dengan penomoran -->
+    <ol style="font-size: 16px; margin-top: 10px; margin-left: 30px;">
+        <li>Your first feature, written in the form of a benefit statement.</li>
+        <li>Your second feature, written in the form of a benefit statement.</li>
+        <li>Your third feature, written in the form of a benefit statement.</li>
+    </ol>
+        </div>        
+        <!-- Formulir dengan border -->
+        <div class="form-container">
+            <h2>Contact Us</h2>
+            <p style="text-align: justify; margin-bottom: 30px;">Sales akan menghubungi anda 1x24 ajm setelah data Kami terima.</p>
+            <form>
+                <div style="margin-bottom: 20px;">
+                    <label for="name" style="font-size: 14px; display: block; font-weight: bold;">Your Name:</label>
+                    <input type="text" id="name" name="name" style="width: 98%; font-size: 18px; font-weight: bold;" placeholder="First and last name" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label for="email" style="font-size: 14px; display: block; font-weight: bold;">Email Address:</label>
+                    <input type="email" id="email" name="email" style="width: 98%; font-size: 18px; font-weight: bold;" placeholder="example@gmail.com" required>
+                </div>
+                <div style="margin-bottom: 20px;">
+                    <label for="programming-focus" style="font-size: 14px; display: block; font-weight: bold;">What part of Programming does it focus on?</label>
+                    <select id="programming-focus" name="programming-focus" style="width: 100%; font-size: 18px; font-weight: bold;" required>
+                        <option value="" hidden>Select option</option>
+                        <option value="Front End">Front End</option>
+                        <option value="Back End">Back End</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="Data Engineering">Data Engineering</option>
+                        <option value="Mechine Learning">Mechine Learning</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 50px;">
+                    <!-- Tambahkan margin-bottom di sini untuk memberikan jarak -->
+                </div>
+                <button type="submit" style="width: 100%; font-size: 20px; font-weight: bold;">SEND</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
